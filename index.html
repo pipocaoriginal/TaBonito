@@ -1,2 +1,32 @@
-coisa qualquer
-sempre a somar
+<div id="Frutos" onmouseover="changeColor('green')" onmouseleave="changeColor('grey')">
+<!-- html -->
+<div class="frutinhos">
+    cajus
+</div>
+<div class="frutinhos">
+    Amendoins
+</div>
+</div>
+<style>
+.frutinhos {
+    outline:2px solid  blue;
+    margin: 30px;
+
+}
+#Frutos {
+    outline:2px solid pink;
+}
+/* css */
+
+</style>
+<script>
+function changeColor(color) {
+    const frutinhos =document.getElementsByClassName("frutinhos")
+    for (let i =0; i<frutinhos.length; i++){
+        frutinhos[i].style.backgroundColor=color
+    }
+}
+// javascript
+
+
+</script>
